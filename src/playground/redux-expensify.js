@@ -1,10 +1,7 @@
 import { createStore, combineReducers } from "redux";
 import uuid from "uuid";
 
-const expensesReducerDefaultState = [];
-
 //ADD_EXPENSE
-
 const addExpense = ({
   description = "",
   note = "",
@@ -62,6 +59,7 @@ const setEndDate = startDate => ({
 });
 
 //Expense Reducer
+const expensesReducerDefaultState = [];
 
 const expensesReducer = (state = expensesReducerDefaultState, action) => {
   switch (action.type) {
