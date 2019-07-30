@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test": "jest"
   },
   "author": "Gabriel Campos",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "jest": "^20.0.4",
     "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "normalize.css": "^7.0.0",
@@ -29,6 +31,7 @@
     "react-modal": "^2.2.2",
     "react-redux": "^5.0.5",
     "react-router-dom": "^5.0.1",
+    "react-test-renderer": "^16.0.0",
     "redux": "^3.7.2",
     "style-loader": "^0.18.2",
     "uuid": "^3.1.0",

@@ -21,7 +21,7 @@ export const setStartDate = startDate => ({
   startDate
 });
 //SET_END_DATE
-export const setEndDate = startDate => ({
+export const setEndDate = endDate => ({
   type: "SET_END_DATE",
-  startDate
+  endDate
 });

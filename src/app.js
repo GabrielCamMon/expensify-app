@@ -5,12 +5,16 @@ import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import getVisibleExpenses from "./selectors/expenses";
 import { addExpense } from "./actions/expenses";
-import { setTextFilter, sortByAmount } from "./actions/filters";
+import moment from "moment";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
 const store = configureStore();
 
+let a = moment(0)
+  .add(4, "days")
+  .valueOf();
+console.log(a);
 store.dispatch(addExpense({ description: "Water bill", amount: 4500 }));
 store.dispatch(addExpense({ description: "Gas bill", createdAt: 1000 }));
 store.dispatch(addExpense({ description: "IPVA", createdAt: 2000 }));
