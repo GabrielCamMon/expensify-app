@@ -103,3 +103,17 @@ export { firebase, database as default };
 //   .catch(function(error) {
 //     console.log("Remove failed: " + error.message);
 //   });
+
+// database.ref('expenses')
+// .once('value')
+// .then(snapshot=>{
+//   const expenses = []
+
+//   snapshot.forEach(childSnapshot=>{
+//     expenses.push({
+//       id: childSnapshot.key,
+//       ...childSnapshot.val()
+//     })
+//   })
+//   console.log(expenses)
+// })
